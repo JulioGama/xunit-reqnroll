@@ -1,0 +1,11 @@
+{
+    "language": {
+        "feature": "pt-br"
+    },
+    "bindingAssemblies": [
+        { "assembly": "xunit-reqnroll" }
+    ],
+    "files.associations": {
+    "*.feature": "reqnroll"
+    }
+}
