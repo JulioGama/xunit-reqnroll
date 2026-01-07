@@ -1,4 +1,4 @@
-namespace xunit_reqnroll.Drivers
+namespace xunit_reqnroll.Tests.Drivers
 {
     public class Conta
     {

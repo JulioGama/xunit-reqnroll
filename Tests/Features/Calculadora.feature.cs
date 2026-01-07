@@ -11,27 +11,27 @@
 #region Designer generated code
 #pragma warning disable
 using Reqnroll;
-namespace xunit_reqnroll.Features
+namespace xunit_reqnroll.Tests.Features
 {
     
     
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Reqnroll", "3.0.0.0")]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class GestaoDeContaFeature : object, global::Xunit.IClassFixture<GestaoDeContaFeature.FixtureData>, global::Xunit.IAsyncLifetime
+    public partial class CalculadoraFeature : object, global::Xunit.IClassFixture<CalculadoraFeature.FixtureData>, global::Xunit.IAsyncLifetime
     {
         
         private global::Reqnroll.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("pt-br"), "Features", "Gestão de Conta", null, global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new global::System.Globalization.CultureInfo("en-us"), "Tests/Features", "Calculadora", "    Simples calculadora para efetuar operações básicas", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags, InitializeCucumberMessages());
         
         private global::Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Conta.feature"
+#line 1 "Calculadora.feature"
 #line hidden
         
-        public GestaoDeContaFeature(GestaoDeContaFeature.FixtureData fixtureData, global::Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public CalculadoraFeature(CalculadoraFeature.FixtureData fixtureData, global::Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
         }
@@ -105,7 +105,7 @@ namespace xunit_reqnroll.Features
         
         private static global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages InitializeCucumberMessages()
         {
-            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Features/Conta.feature.ndjson", 6);
+            return new global::Reqnroll.Formatters.RuntimeSupport.FeatureLevelCucumberMessages("Tests/Features/Calculadora.feature.ndjson", 5);
         }
         
         async global::System.Threading.Tasks.Task global::Xunit.IAsyncLifetime.InitializeAsync()
@@ -133,26 +133,25 @@ namespace xunit_reqnroll.Features
             await this.TestTearDownAsync();
         }
         
-        [global::Xunit.SkippableTheoryAttribute(DisplayName="Movimentações variadas na conta")]
-        [global::Xunit.TraitAttribute("FeatureTitle", "Gestão de Conta")]
-        [global::Xunit.TraitAttribute("Description", "Movimentações variadas na conta")]
-        [global::Xunit.InlineDataAttribute("100", "depositar", "50", "150", "0", new string[0])]
-        [global::Xunit.InlineDataAttribute("500", "sacar", "100", "400", "1", new string[0])]
-        [global::Xunit.InlineDataAttribute("200", "sacar", "250", "200", "2", new string[0])]
-        [global::Xunit.InlineDataAttribute("0", "depositar", "1000", "1000", "3", new string[0])]
-        public async global::System.Threading.Tasks.Task MovimentacoesVariadasNaConta(string saldo_Inicial, string operacao, string valor, string saldo_Final, string @__pickleIndex, string[] exampleTags)
+        [global::Xunit.SkippableTheoryAttribute(DisplayName="Calcular dois números")]
+        [global::Xunit.TraitAttribute("FeatureTitle", "Calculadora")]
+        [global::Xunit.TraitAttribute("Description", "Calcular dois números")]
+        [global::Xunit.InlineDataAttribute("50", "70", "somar", "120", "0", new string[0])]
+        [global::Xunit.InlineDataAttribute("10", "5", "subtrair", "5", "1", new string[0])]
+        [global::Xunit.InlineDataAttribute("3", "10", "multiplicar", "30", "2", new string[0])]
+        public async global::System.Threading.Tasks.Task CalcularDoisNumeros(string num1, string num2, string operacao, string resultado, string @__pickleIndex, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             global::System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new global::System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("saldo_inicial", saldo_Inicial);
+            argumentsOfScenario.Add("num1", num1);
+            argumentsOfScenario.Add("num2", num2);
             argumentsOfScenario.Add("operacao", operacao);
-            argumentsOfScenario.Add("valor", valor);
-            argumentsOfScenario.Add("saldo_final", saldo_Final);
+            argumentsOfScenario.Add("resultado", resultado);
             string pickleIndex = @__pickleIndex;
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Movimentações variadas na conta", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
+            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Calcular dois números", null, tagsOfScenario, argumentsOfScenario, featureTags, pickleIndex);
             string[] tagsOfRule = ((string[])(null));
             global::Reqnroll.RuleInfo ruleInfo = null;
-#line 4
+#line 5
 this.ScenarioInitialize(scenarioInfo, ruleInfo);
 #line hidden
             if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
@@ -162,14 +161,17 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
             else
             {
                 await this.ScenarioStartAsync();
-#line 5
-    await testRunner.GivenAsync(string.Format("que eu tenho uma conta com saldo de {0}", saldo_Inicial), ((string)(null)), ((global::Reqnroll.Table)(null)), "Dado ");
-#line hidden
 #line 6
-    await testRunner.WhenAsync(string.Format("eu {0} o valor de {1}", operacao, valor), ((string)(null)), ((global::Reqnroll.Table)(null)), "Quando ");
+    await testRunner.GivenAsync(string.Format("que eu entrei o número {0} na calculadora", num1), ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 7
-    await testRunner.ThenAsync(string.Format("o saldo da conta deve ser {0}", saldo_Final), ((string)(null)), ((global::Reqnroll.Table)(null)), "Então ");
+    await testRunner.AndAsync(string.Format("que eu entrei o número {0} na calculadora", num2), ((string)(null)), ((global::Reqnroll.Table)(null)), "And ");
+#line hidden
+#line 8
+    await testRunner.WhenAsync(string.Format("eu pressionar o botão de {0}", operacao), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+#line hidden
+#line 9
+    await testRunner.ThenAsync(string.Format("o resultado deve ser {0}", resultado), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -182,12 +184,12 @@ this.ScenarioInitialize(scenarioInfo, ruleInfo);
             
             async global::System.Threading.Tasks.Task global::Xunit.IAsyncLifetime.InitializeAsync()
             {
-                await GestaoDeContaFeature.FeatureSetupAsync();
+                await CalculadoraFeature.FeatureSetupAsync();
             }
             
             async global::System.Threading.Tasks.Task global::Xunit.IAsyncLifetime.DisposeAsync()
             {
-                await GestaoDeContaFeature.FeatureTearDownAsync();
+                await CalculadoraFeature.FeatureTearDownAsync();
             }
         }
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xunit-reqnroll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f27b424f282ec7f9214b93d89d5c1fde32a912fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05f52c413707507fe159da8e2a8b2350a84f7ae0")]
 [assembly: System.Reflection.AssemblyProductAttribute("xunit-reqnroll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xunit-reqnroll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4VtkkQTLaeQ=",
+  "dgSpecHash": "OKr2OuexGKk=",
   "success": true,
   "projectFilePath": "C:\\Users\\julio.netto\\xunit-reqnroll\\xunit-reqnroll\\xunit-reqnroll.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\julio.netto\\.nuget\\packages\\cucumber.cucumberexpressions\\17.1.0\\cucumber.cucumberexpressions.17.1.0.nupkg.sha512",
     "C:\\Users\\julio.netto\\.nuget\\packages\\cucumber.htmlformatter\\22.2.0\\cucumber.htmlformatter.22.2.0.nupkg.sha512",
     "C:\\Users\\julio.netto\\.nuget\\packages\\cucumber.messages\\30.1.0\\cucumber.messages.30.1.0.nupkg.sha512",
+    "C:\\Users\\julio.netto\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\julio.netto\\.nuget\\packages\\gherkin\\35.0.0\\gherkin.35.0.0.nupkg.sha512",
     "C:\\Users\\julio.netto\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\9.0.6\\microsoft.bcl.asyncinterfaces.9.0.6.nupkg.sha512",
     "C:\\Users\\julio.netto\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
