@@ -1,12 +1,12 @@
-#language: pt-br
-Funcionalidade: Gestão de Conta
+#language: en-us
+Feature: Gestão de Conta
 
-Esquema do Cenário: Movimentações variadas na conta
-    Dado que eu tenho uma conta com saldo de <saldo_inicial>
-    Quando eu <operacao> o valor de <valor>
-    Então o saldo da conta deve ser <saldo_final>
+Scenario Outline: Movimentações variadas na conta
+    Given que eu tenho uma conta com saldo de <saldo_inicial>
+    When eu <operacao> o valor de <valor>
+    Then o saldo da conta deve ser <saldo_final>
 
-Exemplos:
+Examples:
     | saldo_inicial | operacao  | valor  | saldo_final |
     | 100           | depositar | 50     | 150         |
     | 500           | sacar     | 100    | 400         |

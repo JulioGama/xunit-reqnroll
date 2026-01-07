@@ -1,14 +1,14 @@
-#language: pt-br
-Funcionalidade: Calculadora
+#language: en-us
+Feature: Calculadora
     Simples calculadora para efetuar operações básicas
 
-Esquema do Cenário: Calcular dois números
-    Dado que eu entrei o número <num1> na calculadora
-    E que eu entrei o número <num2> na calculadora
-    Quando eu pressionar o botão de <operacao>
-    Então o resultado deve ser <resultado>
+Scenario Outline: Calcular dois números
+    Given que eu entrei o número <num1> na calculadora
+    And que eu entrei o número <num2> na calculadora
+    When eu pressionar o botão de <operacao>
+    Then o resultado deve ser <resultado>
 
-Exemplos:
+Examples:
     | num1 | num2 | operacao   | resultado |
     | 50   | 70   | somar      | 120       |
     | 10   | 5    | subtrair   | 5         |
